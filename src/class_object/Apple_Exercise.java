@@ -74,6 +74,44 @@ public class Apple_Exercise {
         System.out.println(count); // 2
 
 
+        System.out.println("\n-----TASK 2-----\n");
+
+        Apple[] arr = {
+                new Apple("Yellow", 0.5, "Sour"),
+                new Apple("Red", 0.75, "Sour"),
+                new Apple("Green", 0.5, "Sour"),
+                new Apple("Yellow", 1.0, "Sweet"),
+                new Apple("Yellow", 1.5, "Sweet") };
+
+        for (Apple apple : arr) {
+            System.out.println(apple);
+        }
+
+        System.out.println("\n-----Retrieve each info for each apple-----\n");
+
+        for (Apple apple : arr) {
+            System.out.println(apple.color);
+            System.out.println(apple.price);
+            System.out.println(apple.taste);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
