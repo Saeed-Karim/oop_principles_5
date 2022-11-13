@@ -3,30 +3,24 @@ package class_object;
 import java.util.Arrays;
 
 public class Apple_Exercise {
-    public static void main(String[] args) {
-
-        /*
+    /*
     Create 3 Apple objects with below info
-
     apple1
     Red
     0.5
     Sweet
-
     apple2
     Yellow
     0.75
     Sweet
-
     apple3
     Green
     1.0
     Sour
-
     Print all the objects
      */
 
-        System.out.println("\n-----Task 1-----\n");
+    public static void main(String[] args) {
         Apple apple1 = new Apple();
         Apple apple2 = new Apple();
         Apple apple3 = new Apple();
@@ -35,9 +29,8 @@ public class Apple_Exercise {
         apple1.price = 0.5;
         apple1.taste = "Sweet";
 
-
         apple2.color = "Yellow";
-        apple2.price = 0.55;
+        apple2.price = 0.75;
         apple2.taste = "Sweet";
 
         apple3.color = "Green";
@@ -48,78 +41,68 @@ public class Apple_Exercise {
         System.out.println(apple2);
         System.out.println(apple3);
 
-        System.out.println("\n-----Apple Array-----\n");
-
         /*
-        Count how many  apple objects are Sweet
-
-        EXPECTED :
+        Count how many apple objects are Sweet
+        EXPECTED:
         2
          */
 
-        // Store your apples in an array
-
+        System.out.println("\n------Apple Array------\n");
+        //Store your apples in an array
         Apple[] apples = {apple1, apple2, apple3};
 
-        //System.out.println(Arrays.toString(apples));
-        //System.out.println(apples.length); // 3
-       // System.out.println(apples[1]); //
-       // System.out.println(apples[2].taste); //
+//        System.out.println(Arrays.toString(apples));
+        System.out.println(apples.length); // 3
+//        System.out.println(apples[1]); //
+//        System.out.println(apples[2].taste); //
 
         int count = 0;
         for (Apple apple : apples) {
-            if (apple.taste.equals("Sweet")) count ++;
+            if(apple.taste.equals("Sweet")) count++;
         }
 
         System.out.println(count); // 2
 
 
-        System.out.println("\n-----TASK 2-----\n");
+        System.out.println("\n-----TASK-2-----\n");
+        /*
+        Create 5 apple objects with 3 args constructor
+        a1 -> Yellow, 0.5, Sour
+        a2 -> Red, 0.75, Sour
+        a3 -> Green, 0.5, Sour
+        a4 -> Yellow, 1.0, Sweet
+        a5 -> Yellow, 1.5, Sweet
+        Print all objects
+         */
+
 
         Apple[] arr = {
                 new Apple("Yellow", 0.5, "Sour"),
                 new Apple("Red", 0.75, "Sour"),
                 new Apple("Green", 0.5, "Sour"),
                 new Apple("Yellow", 1.0, "Sweet"),
-                new Apple("Yellow", 1.5, "Sweet") };
+                new Apple("Yellow", 1.5, "Sweet")
+        };
+
+        System.out.println(arr[2]);
 
         for (Apple apple : arr) {
             System.out.println(apple);
         }
 
-        System.out.println("\n-----Retrieve each info for each apple-----\n");
+        System.out.println("\n------Retrieve each info for each apple object and print it-----\n");
+        /*
+        Yellow
+        0.5
+        Sour
+         */
 
         for (Apple apple : arr) {
             System.out.println(apple.color);
             System.out.println(apple.price);
             System.out.println(apple.taste);
+            System.out.println("----------------");
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }
