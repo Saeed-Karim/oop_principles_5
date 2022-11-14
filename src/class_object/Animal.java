@@ -54,13 +54,13 @@ public class Animal {
     public boolean isHerbivore;
     public boolean isOmnivore;
     public static boolean isExtinct = true;
-  //  public static final boolean isExtinct = false;
+    //  public static final boolean isExtinct = false;
 
     public static void main(String[] args) {
-       // Animal a1 = new Animal();
-       // Animal a2 = new Animal("Dog", 3);
+        // Animal a1 = new Animal();
+        // Animal a2 = new Animal("Dog", 3);
         //Animal a3 = new Animal("Cow", 5);
-       // Animal a4 = new Animal("Cat", 1);
+        // Animal a4 = new Animal("Cat", 1);
 
         Animal a5 = new Animal("Tiger", 10, true, false, false);
         Animal a6 = new Animal("Cow", 5, false, true, false);

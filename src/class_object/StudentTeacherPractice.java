@@ -27,7 +27,6 @@ public class StudentTeacherPractice {
 
         /*
         Find the average age of the students of Alex
-
         Expected: 19
          */
 

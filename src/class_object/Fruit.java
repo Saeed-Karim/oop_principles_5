@@ -11,7 +11,7 @@ public class Fruit {
         System.out.println("This is an instance block");
     }
 
-   static {
+    static {
         hasColor = true;
         System.out.println("This is a static block");
     }

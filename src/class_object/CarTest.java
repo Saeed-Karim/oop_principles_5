@@ -58,7 +58,7 @@ public class CarTest {
         /*
         Count all the cars that are Blue or Beige or 2023 -> 3
          */
-        
+
         int countBB2023 = 0;
 
         for (Car car : cars) {
@@ -75,11 +75,11 @@ public class CarTest {
         3
          */
 
-       // Iterator<Car> iterator = cars.iterator();
-       // while (iterator.hasNext()){
-    //        if (iterator.next().make.equals("Tesla")) iterator.remove();
-       // }
-       // System.out.println(cars.size()); // 3
+        // Iterator<Car> iterator = cars.iterator();
+        // while (iterator.hasNext()){
+        //        if (iterator.next().make.equals("Tesla")) iterator.remove();
+        // }
+        // System.out.println(cars.size()); // 3
 
         cars.removeIf(car -> car.make.equals("Tesla"));
         System.out.println(cars.size());

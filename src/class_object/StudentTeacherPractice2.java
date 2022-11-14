@@ -8,7 +8,6 @@ public class StudentTeacherPractice2 {
         /*
         Create a Teacher Object
         Create 4 student objects
-
         Add students to Teacher Student List
         Find the age difference between Oldest and Youngest students
          */
@@ -26,8 +25,8 @@ public class StudentTeacherPractice2 {
         teacher.addStudent(student4);
 
 
-      int minAge = Integer.MAX_VALUE;
-      int maxAge = Integer.MIN_VALUE;
+        int minAge = Integer.MAX_VALUE;
+        int maxAge = Integer.MIN_VALUE;
 
         for (Student student : teacher.getStudents()) {
             if (student.age > maxAge) maxAge = student.age;

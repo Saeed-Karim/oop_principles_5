@@ -14,7 +14,7 @@ public class StudentTest {
         student1.study();  // Student studies
         student2.study(); // Student studies
 
-         student1.rest();
+        student1.rest();
         student2.rest();
 
 
