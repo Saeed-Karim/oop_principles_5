@@ -19,6 +19,27 @@ public class Animal {
     // Create a constructor that takes all 5 args - >
 
 
+
+    public Animal(String name, int age, boolean isCarnivore, boolean isHerbivore, boolean isOmnivore) {
+        this(name, age);
+        System.out.println("This is 5 - args constructor");
+        this.isCarnivore = isCarnivore;
+        this.isHerbivore = isHerbivore;
+        this.isOmnivore = isOmnivore;
+
+
+
+    }
+
+
+    public String name;
+    public int age;
+    public boolean isCarnivore;
+    public boolean isHerbivore;
+    public boolean isOmnivore;
+    public static boolean isExtinct = true;
+    //  public static final boolean isExtinct = false;
+
     @Override
     public String toString() {
 
@@ -35,26 +56,14 @@ public class Animal {
         return result;
 
     }
-    public Animal(String name, int age, boolean isCarnivore, boolean isHerbivore, boolean isOmnivore) {
-        this(name, age);
-        System.out.println("This is 5 - args constructor");
-        this.isCarnivore = isCarnivore;
-        this.isHerbivore = isHerbivore;
-        this.isOmnivore = isOmnivore;
 
-
-
-
+    // Execute the code below, whenever an Animal object is garbage collected
+    // You will override finalize() method if you would like to execute a block of code, right after your object is destroyed
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println(getClass().getName() + " "  + this.name + "An Animal object is destroyed");
     }
 
-
-    public String name;
-    public int age;
-    public boolean isCarnivore;
-    public boolean isHerbivore;
-    public boolean isOmnivore;
-    public static boolean isExtinct = true;
-    //  public static final boolean isExtinct = false;
 
     public static void main(String[] args) {
         // Animal a1 = new Animal();
@@ -77,10 +86,8 @@ public class Animal {
 
 
 
-
-
-
-
     }
+
+
 
 }
